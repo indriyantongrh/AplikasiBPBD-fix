@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_beranda"
+        android:icon="@drawable/beranda"
+        android:title="@string/title_beranda" />
+
+    <item
+        android:id="@+id/navigation_panduan"
+        android:icon="@drawable/panduan"
+        android:title="@string/title_panduan" />
+
+    <item
+        android:id="@+id/navigation_tentang"
+        android:icon="@drawable/tentang"
+        android:title="@string/title_tentang" />
+
+</menu>

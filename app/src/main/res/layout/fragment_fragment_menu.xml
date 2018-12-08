@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FragmentMenu">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:id="@+id/layoutlogo"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:background="@color/colorlogo">
+
+                <ImageView
+                    android:id="@+id/logobpbd"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/logobpbd" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:gravity="center"
+                    android:layout_toEndOf="@id/logobpbd"
+                    android:text="BADAN PENANGGUNALANGAN \n BENCANA KOTA SEMARANG"
+                    android:textColor="@color/colorputih"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+            -------------------------logobpbd
+
+            <RelativeLayout
+                android:id="@+id/layoutbtnlapor"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:layout_below="@+id/layoutlogo">
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorputih"
+                    android:textAlignment="center"
+                    android:src="@drawable/callbpbd"
+                    />
+            </RelativeLayout>
+            -------------------------tombolpanggil
+
+            <RelativeLayout
+                android:id="@+id/menubaris1"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_below="@+id/layoutbtnlapor"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp">
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/btn_berita"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:cardCornerRadius="4dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:src="@drawable/berita"/>
+
+                        <TextView
+                            android:id="@+id/text1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:text="Berita BPBD"
+                            android:textColor="#000" />
+
+                        <View
+                            android:id="@+id/View1"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_above="@+id/text1"
+                            android:background="#949494" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+                -------------------------tombol berita
+                <android.support.v7.widget.CardView
+                    android:id="@+id/btn_kosong1"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:cardCornerRadius="4dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:src="@drawable/comingsooon"/>
+
+                        <TextView
+                            android:id="@+id/text2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:gravity="center"
+                            android:text="Coming Soon"
+                            android:textStyle="bold"
+                            android:textColor="#000"/>
+
+                        <View
+                            android:id="@+id/View2"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_above="@+id/text2"
+                            android:background="#949494" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/btn_kosong2"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:cardCornerRadius="4dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="1dp"
+                            android:src="@drawable/comingsooon"/>
+
+                        <TextView
+                            android:id="@+id/text3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:text="Coming Soon"
+                            android:textColor="#000" />
+
+                        <View
+                            android:id="@+id/View3"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_above="@+id/text3"
+                            android:background="#949494" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/menubaris2"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_below="@+id/menubaris1"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp">
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/btn_kosong4"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:cardCornerRadius="4dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:src="@drawable/comingsooon"/>
+
+                        <TextView
+                            android:id="@+id/text4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:text="Coming Soon"
+                            android:textColor="#000" />
+
+                        <View
+                            android:id="@+id/View4"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_above="@+id/text4"
+                            android:background="#949494" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/btn_kosong5"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:cardCornerRadius="4dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:src="@drawable/comingsooon"/>
+
+                        <TextView
+                            android:id="@+id/text5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:gravity="center"
+                            android:text="Coming Soon"
+                            android:textStyle="bold"
+                            android:textColor="#000"/>
+
+                        <View
+                            android:id="@+id/View5"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_above="@+id/text5"
+                            android:background="#949494" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+                -----------------Card sayur
+                <android.support.v7.widget.CardView
+                    android:id="@+id/btn_btnkosong6"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:cardCornerRadius="4dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="1dp"
+                            android:src="@drawable/comingsooon"/>
+
+                        <TextView
+                            android:id="@+id/text6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:text="Coming Soon"
+                            android:textColor="#000" />
+
+                        <View
+                            android:id="@+id/View6"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_above="@+id/text6"
+                            android:background="#949494" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

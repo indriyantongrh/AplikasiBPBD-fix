@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">BPBD Semarang</string>
+
+
+    <string name="title_beranda">Beranda</string>
+    <string name="title_panduan">Panduan</string>
+    <string name="title_tentang">Tentang</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="Kategori">
+        <item>Berita</item>
+        <item>Indonesiaku</item>
+        <item>Motivasi</item>
+        <item>Kegiatan</item>
+        <item>Infografis</item>
+        <item>Galeri</item>
+    </string-array>
+
+    <string-array name="pilih_bahasa">
+        <item>Indonesia</item>
+        <item>English</item>
+    </string-array>
+
+</resources>
