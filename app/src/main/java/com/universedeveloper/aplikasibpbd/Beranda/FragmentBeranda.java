@@ -1,6 +1,7 @@
 package com.universedeveloper.aplikasibpbd.Beranda;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -47,6 +48,8 @@ public class FragmentBeranda extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_fragment_beranda, container, false);
+
+
 
         presenter = new FragmentBerandaPresenter(this);
 
@@ -125,6 +128,8 @@ public class FragmentBeranda extends Fragment {
 
         return view;
     }
+
+
 
     private void initView() {
         Rv_berita.setHasFixedSize(true);

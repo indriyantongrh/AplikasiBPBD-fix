@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
                     loadFragment(fragment);
                     return true;
                 case R.id.navigation_tentang:
-                    //toolbar.setTitle("Tentang");
+                    ///toolbar.setTitle("Tentang");
                     fragment = new FragmentTentang();
                     loadFragment(fragment);
                     return true;

@@ -12,14 +12,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".SplashScreen"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Splashscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
+                <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Detail.DetailArtikel" />
+        <activity
+            android:name=".Detail.DetailArtikel"
+            android:theme="@style/NoTitlle"/>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/NoTitlle">
+
+        </activity>
     </application>
 
 </manifest>

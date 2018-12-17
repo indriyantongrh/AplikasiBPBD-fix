@@ -5,12 +5,60 @@
     android:layout_height="match_parent"
     tools:context=".Tentang.FragmentTentang">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:textSize="40sp"
-        android:text="Tentang" />
 
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:paddingBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingTop="15dp"
+        android:background="@color/colorlogo">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@id/logobpbd"
+            android:textSize="20dp"
+            android:textColor="@color/colorputih"
+            android:text="Tentang"
+            android:textStyle="bold" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/cardview"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-2dp"
+        android:paddingTop="15dp"
+        android:src="@drawable/logobpbd" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@id/logobpbd"
+            android:gravity="top"
+            android:paddingLeft="14dp"
+            android:paddingTop="10dp"
+            android:paddingRight="15dp"
+            android:text="BPBD Kota Semarang merupakan aplikasi yang dibuat untuk mempermudah masayarakat Kota Semarang khusus nya untuk mengetahui berita terkini tentang bencana di Kota Semarang secara cepat, tepat, dan akurat. \n \n Diharapkan dengan ada nya aplikasi ini warga semarang dapat secara langsung memperloah berita/informasi tentang kebencanaan secara langsung dari lembaga yang berwenang. \n \nSemoga aplikasi ini mempu memberikan manfaat serta pelayanan secara maximal kepada masyarakat sehingga dapat memenuhi standar pelayanan di Lembaga BPBD Kota Semarang.
+"
+            android:textSize="17dp" />
+
+    </RelativeLayout>
 </RelativeLayout>

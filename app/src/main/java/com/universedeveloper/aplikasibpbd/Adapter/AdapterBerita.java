@@ -148,15 +148,14 @@ public class AdapterBerita extends RecyclerView.Adapter<AdapterBerita.ViewHolder
         }
 
         @Override
-        public void onClick(View view) {
+        public void onClick(View view ) {
             Intent detail = new Intent(view.getContext(), DetailArtikel.class);
-//            detail.putExtra("judul", txt_judul.getText());
-//            detail.putExtra("harga", txt_harga.getText());
-//            detail.putExtra("status", txt_status.getText());
-//            detail.putExtra("tanggal_posting", txt_tanggal_posting.getText());
+            detail.putExtra("title", txtjudulberita.getText());
+            detail.putExtra("date", txtdate.getText());
+            detail.putExtra("content", txt_content.getText());
 //
-//            detail.putExtra("id_iklan", txt_id_iklan.getText());
-//            detail.putExtra("user_id", txt_user_id.getText());
+
+            detail.putExtra("picture", txt_picture.getText());
 //            detail.putExtra("kategori", txt_kategori.getText());
 //            detail.putExtra("deskripsi", txt_deskripsi.getText());
 //

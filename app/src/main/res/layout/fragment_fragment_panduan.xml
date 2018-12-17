@@ -5,15 +5,92 @@
     android:layout_height="match_parent"
     tools:context=".Panduan.FragmentPanduan">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:paddingBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingTop="15dp"
+        android:background="@color/colorlogo">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@id/logobpbd"
+            android:textSize="20dp"
+            android:textColor="@color/colorputih"
+            android:text="Panduan"
+            android:textStyle="bold" />
+
+    </android.support.v7.widget.Toolbar>
+
     <RelativeLayout
+        android:id="@+id/cardview"
+        android:layout_below="@id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:textSize="40sp"
-        android:text="Panduan" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-2dp"
+            android:paddingTop="15dp"
+            android:src="@drawable/logobpbd" />
+
+        <TextView
+            android:id="@+id/p1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@id/logobpbd"
+            android:gravity="center"
+            android:paddingLeft="14dp"
+            android:paddingTop="10dp"
+            android:paddingRight="15dp"
+            android:text="Aplikasi BPBD Kota Semarang menampilkan berita / informasi terkini tentang bencana ataupun kejadian-kejadian seperti kebakaran, atau kejadian alam yang lainnya."
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/p2"
+            android:layout_below="@+id/p1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@id/logobpbd"
+            android:paddingLeft="19dp"
+            android:paddingTop="10dp"
+            android:paddingRight="15dp"
+            android:textSize="16dp"
+            android:text="Untuk melihat informasi seputar berita, kegiatan, dan lain-lain dari BPBD Kota Semarang, bisa dengan : \n
+ 1. Memilih pada tab beranda \n
+ 2. Memilih kategori informasi \n
+ 3. Memilih informasi yang ingin ditampilkan \n
+ 4. Informasi yang dipilih akan ditampilkan"
+            />
+        <TextView
+            android:id="@+id/p3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/p2"
+            android:text="Semoga dengan adanya aplikasi ini, masyarakat dapat mengetahui informasi terkini mengenai kejadian, bencana maupun informasi dari BPBD Kota Semarang."
+            android:layout_centerVertical="true"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@id/logobpbd"
+            android:gravity="center"
+            android:paddingLeft="14dp"
+            android:paddingTop="10dp"
+            android:paddingRight="15dp"
+            android:textSize="16dp"/>
+
 
     </RelativeLayout>
+
+
 </RelativeLayout>
