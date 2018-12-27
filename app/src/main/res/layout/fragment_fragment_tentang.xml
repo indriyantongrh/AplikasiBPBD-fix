@@ -56,7 +56,7 @@
             android:paddingLeft="14dp"
             android:paddingTop="10dp"
             android:paddingRight="15dp"
-            android:text="BPBD Kota Semarang merupakan aplikasi yang dibuat untuk mempermudah masayarakat Kota Semarang khusus nya untuk mengetahui berita terkini tentang bencana di Kota Semarang secara cepat, tepat, dan akurat. \n \n Diharapkan dengan ada nya aplikasi ini warga semarang dapat secara langsung memperloah berita/informasi tentang kebencanaan secara langsung dari lembaga yang berwenang. \n \nSemoga aplikasi ini mempu memberikan manfaat serta pelayanan secara maximal kepada masyarakat sehingga dapat memenuhi standar pelayanan di Lembaga BPBD Kota Semarang.
+            android:text="Aplikasi BPBD Kota Semarang merupakan aplikasi yang dibuat guna mempermudah masyarakat Kota Semarang khususnya untuk mengetahui berita terkini tentang bencana di Kota Semarang secara cepat, tepat, dan akurat. \n \nDiharapkan dengan adanya aplikasi ini warga semarang dapat secara langsung memperloah berita/informasi tentang kebencanaan secara langsung dari lembaga yang berwenang. \n \nSemoga aplikasi ini mampu memberikan manfaat serta pelayanan secara maksimal kepada masyarakat sehingga dapat memenuhi standar pelayanan di Lembaga BPBD Kota Semarang.
 "
             android:textSize="17dp" />
 

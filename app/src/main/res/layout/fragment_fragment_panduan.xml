@@ -70,9 +70,10 @@
             android:textSize="16dp"
             android:text="Untuk melihat informasi seputar berita, kegiatan, dan lain-lain dari BPBD Kota Semarang, bisa dengan : \n
  1. Memilih pada tab beranda \n
- 2. Memilih kategori informasi \n
- 3. Memilih informasi yang ingin ditampilkan \n
- 4. Informasi yang dipilih akan ditampilkan"
+ 2. Memilih menu Berita BPBD \n
+ 3. Memilih kategori informasi \n
+ 4. Memilih informasi yang ingin ditampilkan \n
+ 5. Informasi yang dipilih akan ditampilkan"
             />
         <TextView
             android:id="@+id/p3"
