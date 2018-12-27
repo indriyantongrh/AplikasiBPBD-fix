@@ -176,7 +176,7 @@
                             android:layout_height="wrap_content"
                             android:layout_alignParentBottom="true"
                             android:gravity="center"
-                            android:text="Perkiraan Cuasa"
+                            android:text="Perkiraan Cuaca"
                             android:textStyle="bold"
                             android:textColor="#000"
                             android:textSize="13dp" />

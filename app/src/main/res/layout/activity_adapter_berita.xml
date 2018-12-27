@@ -25,6 +25,7 @@
                 android:textColor="#000"
                android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
+                android:paddingTop="15dp"
                 android:text="Judul Berita"
                 android:textSize="15sp"
                 android:textStyle="bold"
