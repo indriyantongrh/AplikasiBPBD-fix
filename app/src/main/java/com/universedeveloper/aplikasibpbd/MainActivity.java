@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 import com.universedeveloper.aplikasibpbd.Beranda.FragmentBeranda;
+import com.universedeveloper.aplikasibpbd.Beranda.BerandaUtama;
 import com.universedeveloper.aplikasibpbd.Panduan.FragmentPanduan;
 import com.universedeveloper.aplikasibpbd.Tentang.FragmentTentang;
 
@@ -26,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         toolbar = getSupportActionBar();
 
         Fragment fragment;
-        fragment = new FragmentBeranda();
+        fragment = new BerandaUtama();
         loadFragment(fragment);
         //return true;
 
@@ -44,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
             switch (item.getItemId()) {
                 case R.id.navigation_beranda:
                     //toolbar.setTitle("Beranda");
-                    fragment = new FragmentBeranda();
+                    fragment = new BerandaUtama();
                     loadFragment(fragment);
                     return true;
                 case R.id.navigation_panduan:

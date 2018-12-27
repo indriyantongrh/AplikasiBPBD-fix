@@ -40,7 +40,7 @@
                 android:paddingHorizontal="10dp"
                 android:paddingVertical="10dp"
                 android:text="Judul Berita"
-                android:textSize="32dp"
+                android:textSize="22dp"
                 android:textStyle="bold" />
 
             <ImageView
@@ -93,17 +93,18 @@
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/txtdetailberita"
+                android:id="@+id/txtdetailberita1"
                 android:layout_below="@+id/txtatribut"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="fill_parent"
                 android:paddingHorizontal="20dp"
                 android:paddingVertical="10dp">
-                <TextView
-                    android:id="@+id/txtdetailberita1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Detail Berita Detail Detail Berita Detail Berita Detail Berita Detail Berita Detail Berita Detail Berita Detail Berita Detail Berita Detail Berita Detail Berita Detail Berita Detail Berita Detail Berita Detail Berita Detail Berita Detail Berita Detail Berita Detail Berita Detail Berita Detail Berita Detail Berita Detail Berita Detail Berita Detail Berita Detail Berita "
+                <WebView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/webView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
                     />
             </RelativeLayout>
 
