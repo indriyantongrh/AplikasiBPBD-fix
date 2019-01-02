@@ -1,7 +1,13 @@
 package com.universedeveloper.aplikasibpbd.Beranda;
 
 
+import android.app.AlertDialog;
+import android.app.FragmentManager;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -15,6 +21,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ProgressBar;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import com.universedeveloper.aplikasibpbd.Adapter.AdapterBerita;
 import com.universedeveloper.aplikasibpbd.Model.ModelBerita;
@@ -37,6 +44,7 @@ public class FragmentBeranda extends Fragment {
     String[] filter_kategori;
     ArrayAdapter adapter_filter_kategori;
 
+    ConnectivityManager conMgr;
 
     public FragmentBeranda() {
         // Required empty public constructor
@@ -49,6 +57,16 @@ public class FragmentBeranda extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_fragment_beranda, container, false);
 
+        conMgr = (ConnectivityManager) getActivity().getSystemService(Context.CONNECTIVITY_SERVICE);
+        {
+            if (conMgr.getActiveNetworkInfo() != null
+                    && conMgr.getActiveNetworkInfo().isAvailable()
+                    && conMgr.getActiveNetworkInfo().isConnected()) {
+            } else {
+                Toast.makeText(getContext(), "Tidak ada akses Internet",
+                        Toast.LENGTH_LONG).show();
+            }
+        }
 
 
         presenter = new FragmentBerandaPresenter(this);
@@ -126,7 +144,11 @@ public class FragmentBeranda extends Fragment {
 
         });
 
+
+
         return view;
+
+
     }
 
 
@@ -145,5 +167,11 @@ public class FragmentBeranda extends Fragment {
         adapterBerita.notifyDataSetChanged();
 
     }
+
+
+
+
+
+
 
 }

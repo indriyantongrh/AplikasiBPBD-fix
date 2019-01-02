@@ -96,12 +96,13 @@
             <RelativeLayout
                 android:id="@+id/txtdetailberita1"
                 android:layout_below="@+id/txtatribut"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
                 android:paddingHorizontal="20dp"
-                android:paddingVertical="10dp">
+                android:paddingVertical="10dp"
+                tools:ignore="WebViewLayout">
                 <WebView
-                    android:layout_width="fill_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
                     android:id="@+id/webView"
                     android:layout_alignParentLeft="true"
