@@ -117,7 +117,7 @@ public class BerandaUtama extends Fragment {
             @Override
             public void onClick(View view) {
 
-                Toast.makeText(getActivity(), "Fitur Peringatan Dini segera hadir!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "Fitur Irly Warning Sistem  Dini segera hadir!", Toast.LENGTH_SHORT).show();
             }
 
         });

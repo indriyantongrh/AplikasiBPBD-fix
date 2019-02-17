@@ -29,7 +29,7 @@
                 android:layout_height="90dp"
                 android:layout_alignParentStart="true"
                 android:layout_centerInParent="true"
-                android:src="@drawable/logobpbd" />
+                android:src="@drawable/logo_bpbd" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -38,9 +38,9 @@
                 android:layout_marginStart="0dp"
                 android:layout_toEndOf="@id/logobpbd"
                 android:gravity="center"
-                android:textSize="18dp"
+                android:textSize="19dp"
                 android:textColor="@color/colorputih"
-                android:text="BADAN PENANGGULANGAN BENCANA KOTA SEMARANG"
+                android:text="BADAN PENANGGULANGAN BENCANA DAERAH \n KOTA SEMARANG"
                 android:textStyle="bold" />
 
         </android.support.v7.widget.Toolbar>
